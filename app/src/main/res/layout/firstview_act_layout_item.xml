@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/load"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.6"
+            android:background="@drawable/bg_border">
+
+            <ImageView
+                android:id="@+id/load_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/down_music_pressed" />
+
+            <TextView
+                android:id="@+id/my_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/load_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="我的下载"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mv"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/load"
+            android:alpha="0.6"
+            android:background="@drawable/bg_border">
+
+            <ImageView
+                android:id="@+id/mv_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mine_mv_pressed" />
+
+            <TextView
+                android:id="@+id/my_mv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="我的MV"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/local_songs"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/load"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.6"
+            android:background="@drawable/bg_border">
+
+            <ImageView
+                android:id="@+id/local_songs_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/show_mv_1_pressed" />
+
+            <TextView
+                android:id="@+id/local_songs_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/local_songs_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="本地歌曲"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_songs"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/mv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/local_songs"
+            android:alpha="0.6"
+            android:background="@drawable/bg_border">
+
+            <ImageView
+                android:id="@+id/list_songs_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nowplaycurlist_pressed" />
+
+            <TextView
+                android:id="@+id/list_songs_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_songs_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="默认列表"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_like"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/local_songs"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.6"
+            android:background="@drawable/bg_border">
+
+            <ImageView
+                android:id="@+id/my_like_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/play_like_big_disabled" />
+
+            <TextView
+                android:id="@+id/my_like_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_like_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="我喜欢听"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lasted_songs"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/list_songs"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/my_like"
+            android:alpha="0.6"
+            android:background="@drawable/bg_border">
+
+            <ImageView
+                android:id="@+id/lasted_songs_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/classification_lately" />
+
+            <TextView
+                android:id="@+id/lasted_songs_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lasted_songs_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="最近播放"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_radio"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/my_like"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.6"
+            android:background="@drawable/bg_border">
+
+            <ImageView
+                android:id="@+id/my_radio_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/online_square3s_radio_pressed" />
+
+            <TextView
+                android:id="@+id/my_radio_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_radio_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="我的电台"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/new_list"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/lasted_songs"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/my_radio"
+            android:alpha="0.6"
+            android:background="@drawable/bg_border">
+
+            <ImageView
+                android:id="@+id/new_list_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ksing_add_photo_pressed" />
+
+            <TextView
+                android:id="@+id/new_list_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/new_list_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="最近播放"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

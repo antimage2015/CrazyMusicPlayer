@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_border"
+        android:src="@drawable/main_search_icon_press"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/search_songs"
+        android:text="搜索"
+        android:padding="2dp"
+        android:textSize="22sp"
+        android:layout_alignTop="@id/search"
+        android:layout_alignBottom="@id/search"
+        android:layout_toLeftOf="@id/search"
+        android:background="@drawable/bg_search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/search_songs_results"
+        android:text="热门搜索:"
+        android:textSize="22sp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_below="@id/search_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycler_view"
+        android:layout_below="@id/search_songs_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
